@@ -1,0 +1,31 @@
+nav {
+  background-color: $myColor8 !important;
+  a.navbar-brand {
+    @include logo(1.5rem, $myColor3);
+  }
+
+  a.nav-link {
+    @include nav-links($myColor3, 1rem);
+  }
+
+  .contact-btn {
+    border: 1px solid $myColor3;
+    background-color: transparent;
+    color: $myColor3 !important;
+    font-family: $myFontsContent;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    &:hover {
+      box-shadow: inset 0 0 0 3px $myColor3;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+  }
+}
+
+/* .navbar-light .navbar-toggler-icon {
+  background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+} */

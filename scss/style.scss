@@ -1,0 +1,44 @@
+////////////////////////
+// Color definition
+///////////////////////
+$myColor1: #cccccc;
+$myColor2: #ffd302;
+$myColor3: #ffffff;
+$myColor4: #3d4458;
+$myColor5: #72d6c9;
+$myColor6: #2c7566;
+$myColor7: #ff6f62;
+$myColor8: #3dbeff;
+
+// Fonts
+$myFontsTitle: "Roboto Slab", sans-serif;
+$myFontsContent: "Ubuntu", sans-serif;
+
+////////////////////////
+// Variables modificadas
+///////////////////////
+$primary: $myColor1;
+$border-radius: 15px;
+
+@import "../libs/bootstrap/scss/bootstrap.scss";
+@import "../scss/mixines";
+@import "../scss/footer";
+@import "../scss/four-4-images";
+@import "../scss/comments";
+@import "../scss/hero-image";
+@import "../scss/half-text-img";
+@import "../scss/navigation";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  position: absolute;
+  z-index: 99;
+  background-color: transparent;
+}

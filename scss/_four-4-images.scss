@@ -1,0 +1,30 @@
+.images-4 {
+  background-color: #fff;
+  .img1 {
+    @include backgroundImage(url(../img/desktop/image-gallery-milkbottles.jpg), center bottom);
+    /* height: 50vh;
+    aspect-ratio: 2 / 3; */
+    @include aspectRatio;
+  }
+  .img2 {
+    @include backgroundImage(url(../img/desktop/image-gallery-orange.jpg), center center);
+    /* height: 50vh;
+    aspect-ratio: 2 / 3; */
+    @include aspectRatio;
+  }
+  .img3 {
+    @include backgroundImage(url(../img/desktop/image-gallery-cone.jpg), center center);
+    /* height: 50vh;
+    aspect-ratio: 2 / 3; */
+    @include aspectRatio;
+  }
+  .img4 {
+    @include backgroundImage(url(../img/desktop/image-gallery-sugarcubes.jpg), center center);
+    /* height: 50vh;
+    aspect-ratio: 2 / 3; */
+    @include aspectRatio;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}

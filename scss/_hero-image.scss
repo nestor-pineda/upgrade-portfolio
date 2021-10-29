@@ -1,0 +1,35 @@
+.hero-full {
+  @include backgroundImage(url(../img/desktop/image-header.jpg), center bottom);
+  margin-top: -62px !important;
+  h1.title {
+    @include titles($myColor3, 4rem, 900);
+  }
+  img.arrow {
+    display: block;
+    width: 40px;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

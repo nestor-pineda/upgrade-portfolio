@@ -1,0 +1,18 @@
+.comments {
+  
+  h2.title {
+    @include titles($myColor1, 3rem, 800);
+  }
+  img.profile {
+    max-width: 80px;
+  }
+  p {
+    @include paragraph($myColor4, 1rem);
+  }
+  h6.name {
+    @include titles($myColor4, 1rem, 700);
+  }
+  p.rol {
+    @include paragraph($myColor1, 0.8rem);
+  }
+}

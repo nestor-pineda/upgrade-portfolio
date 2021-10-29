@@ -1,0 +1,111 @@
+@mixin fullHeightContainer {
+  // height: 100vh;
+  background-color: $myColor3;
+  // width: 100vw;
+}
+
+@mixin halfContainer {
+  background-color: $myColor3;
+}
+
+@mixin backgroundImage($url, $position) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: $position;
+  background-size: cover;
+}
+
+@mixin titles($titleColor, $size, $weight) {
+  font-family: $myFontsTitle;
+  color: $titleColor;
+  font-size: $size;
+  font-weight: $weight;
+  margin: 0px;
+}
+
+@mixin paragraph($color, $size) {
+  color: $color;
+  font-size: $size;
+  font-family: $myFontsContent;
+}
+
+@mixin contentLink($gradient) {
+  font-family: $myFontsTitle;
+  color: $myColor4;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0px;
+  background: linear-gradient(to bottom, $gradient 0%, $gradient 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  text-decoration: none;
+  transition: background-size 0.2s;
+  &:hover {
+    background-size: 4px 50px;
+  }
+}
+
+@mixin logo($size, $color) {
+  font-family: $myFontsContent;
+  font-size: $size;
+  font-weight: 700;
+  color: $color !important;
+}
+
+@mixin nav-links-footer($color, $size) {
+  text-decoration: none;
+  color: $color !important;
+  font-family: $myFontsContent;
+  font-size: $size;
+  font-weight: 400;
+  padding: 0px !important;
+  margin: 0px 14px;
+
+  background: linear-gradient(to bottom, $myColor6 0%, $myColor6 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  text-decoration: none;
+
+  &:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%232c7566' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+  }
+}
+
+@mixin nav-links($color, $size) {
+  text-decoration: none;
+  color: $color !important;
+  font-family: $myFontsContent;
+  font-size: $size;
+  font-weight: 400;
+  padding: 0px !important;
+  margin: 0px 14px;
+
+  background: linear-gradient(to bottom, $myColor3 0%, $myColor3 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  text-decoration: none;
+
+  &:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+  }
+}
+
+@mixin aspectRatio {
+  // height: 50vh;
+  aspect-ratio: 2 / 3;
+  @media screen and (max-width: 767px) {
+    // height: 50vh;
+    aspect-ratio: 1 / 1;
+  }
+}

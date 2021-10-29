@@ -1,0 +1,84 @@
+.half.first {
+  @include halfContainer;
+  height: 100%;
+  // max-height: 500px;
+  .row.height {
+    height: 100%;
+    h3.title {
+      @include titles($myColor4, 2rem, 800);
+    }
+    p {
+      @include paragraph($myColor4, 1rem);
+    }
+    a.link {
+      @include contentLink($myColor2);
+    }
+    .bg-img {
+      @include backgroundImage(url(../img/desktop/image-transform.jpg), center center);
+      height: 100%;
+      min-height: 500px;
+    }
+  }
+}
+
+.half.second {
+  @include halfContainer;
+  height: 100%;
+  // max-height: 500px;
+  .row.height {
+    height: 100%;
+    h3.title {
+      @include titles($myColor4, 2rem, 800);
+    }
+    p {
+      @include paragraph($myColor4, 1rem);
+    }
+    a.link {
+      @include contentLink($myColor7);
+    }
+    .bg-img {
+      @include backgroundImage(url(../img/desktop/image-stand-out.jpg), center center);
+      height: 100%;
+      min-height: 500px;
+    }
+  }
+}
+
+.half.third {
+  @include halfContainer;
+
+  // max-height: 500px;
+  .row.height {
+    h3.title {
+      @include titles($myColor4, 1.4rem, 800);
+    }
+    p {
+      @include paragraph($myColor4, 1rem);
+    }
+    a.link {
+      @include contentLink($myColor2);
+    }
+    .bg-img-1 {
+      @include backgroundImage(url(../img/desktop/image-graphic-design.jpg), center center);
+      height: 100%;
+      min-height: 500px;
+    }
+    .bg-img-2 {
+      @include backgroundImage(url(../img/desktop/image-photography.jpg), center center);
+      height: 100%;
+      min-height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bg-img {
+    max-height: 320px !important;
+    min-height: 320px !important;
+  }
+  .bg-img-1,
+  .bg-img-2 {
+    max-height: 450px !important;
+    min-height: 450px !important;
+  }
+}

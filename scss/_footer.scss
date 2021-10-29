@@ -1,0 +1,17 @@
+.footer {
+  background-color: $myColor5;
+  min-height: 300px;
+  height: 50vh;
+  h4 {
+    @include logo(2.2rem, $myColor6);
+  }
+  a.f-link {
+    @include nav-links-footer($myColor6, 1rem);
+  }
+}
+.social {
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
